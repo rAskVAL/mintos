@@ -52,7 +52,7 @@ export default function CurriencyButton({
         type="checkbox"
         name="checkbox"
         hidden
-        checked={isSelected}
+        checked={typeof isSelected !== "undefined"}
         onChange={handleChange}
       />
       <p className="text-2xl">{currency}</p>
