@@ -22,7 +22,11 @@ export default function CurrencySelector() {
       {selectedCurrencies.length > 0 ? (
         <div className="grid w-full grid-cols-2 gap-2 sm:grid-cols-3">
           {selectedCurrencies.map((currency) => (
-            <CurrencyTag currency={currency} removeCurrency={removeCurrency} />
+            <CurrencyTag
+              key={currency.id}
+              currency={currency}
+              removeCurrency={removeCurrency}
+            />
           ))}
         </div>
       ) : (
