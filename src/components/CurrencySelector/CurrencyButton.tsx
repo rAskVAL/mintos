@@ -26,8 +26,7 @@ export default function CurriencyButton({
     }
   }
 
-  const isSelected =
-    selectedCurrencies.filter((item) => item.id === index).length > 0;
+  const isSelected = selectedCurrencies.find((item) => item.id === index);
 
   return (
     <label
