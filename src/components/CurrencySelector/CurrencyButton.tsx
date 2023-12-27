@@ -33,7 +33,7 @@ export default function CurriencyButton({
     <label
       data-testid={`${currency}-btn`}
       key={index}
-      className={`group flex w-36 cursor-pointer items-center gap-2 rounded-lg border border-gray-200 bg-gray-100 p-2 transition-all active:opacity-55 ${
+      className={`group flex w-full cursor-pointer items-center gap-2 overflow-hidden rounded-lg border border-gray-200 bg-gray-100 p-2 transition-all active:opacity-55 sm:w-36 ${
         isSelected
           ? "hover:border-red-400 hover:bg-red-50"
           : "hover:border-green-400 hover:bg-green-50"

@@ -10,7 +10,7 @@ export default function CurrencyTag({ currency, removeCurrency }: CurrencyTag) {
     <div
       key={currency.id}
       data-testid={`${currency.name}-tag`}
-      className="relative flex w-36 items-center justify-center gap-2 rounded-full border-gray-200 bg-gray-100 p-2"
+      className="relative flex w-full items-center justify-center gap-2 rounded-full border-gray-200 bg-gray-100 p-2 sm:w-36"
     >
       <p className="text-2xl">{currency.name}</p>
       <div

@@ -17,10 +17,10 @@ export default function CurrencySelector() {
   return (
     <div
       data-testid="CurrencyComponent"
-      className="flex h-96 flex-col justify-between rounded-xl border border-gray-200 bg-gray-50 p-4"
+      className="flex h-full w-full flex-col justify-between rounded-xl border border-gray-200 bg-gray-50 p-4 sm:h-96 sm:w-fit"
     >
       {selectedCurrencies.length > 0 ? (
-        <div className="grid w-full grid-cols-3 gap-2">
+        <div className="grid w-full grid-cols-2 gap-2 sm:grid-cols-3">
           {selectedCurrencies.map((currency) => (
             <CurrencyTag currency={currency} removeCurrency={removeCurrency} />
           ))}
@@ -30,7 +30,7 @@ export default function CurrencySelector() {
           <p>Please select currency</p>
         </div>
       )}
-      <div className="grid w-full grid-cols-3 gap-2">
+      <div className="grid w-full grid-cols-2 gap-2 sm:grid-cols-3">
         {currencies.map((curriency: string, index: number) => (
           <CurriencyButton
             key={index}
